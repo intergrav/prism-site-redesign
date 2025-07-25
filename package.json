@@ -1,0 +1,31 @@
+{
+	"name": "prism-launcher-website",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"format": "prettier --write ."
+	},
+	"dependencies": {
+		"@astrojs/mdx": "^4.3.1",
+		"@astrojs/sitemap": "^3.4.1",
+		"@tailwindcss/typography": "^0.5.16",
+		"@tailwindcss/vite": "^4.1.11",
+		"astro": "^5.12.1",
+		"astro-icon": "^1.1.5",
+		"rehype-raw": "^7.0.0",
+		"rehype-stringify": "^10.0.1",
+		"remark": "^15.0.1",
+		"remark-rehype": "^11.1.2",
+		"tailwindcss": "^4.1.11"
+	},
+	"devDependencies": {
+		"@iconify-json/lucide": "^1.2.57",
+		"@iconify-json/simple-icons": "^1.2.44",
+		"prettier": "^3.6.2",
+		"prettier-plugin-astro": "^0.14.1"
+	}
+}
