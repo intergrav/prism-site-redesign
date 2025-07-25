@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DownloadMarkdownLayout.astro
+layout: ../../layouts/DownloadLayout.astro
 title: Steam Deck Download
 platform: steam-deck
 description: Download Prism Launcher on Steam Deck

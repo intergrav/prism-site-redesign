@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DownloadMarkdownLayout.astro
+layout: ../../layouts/DownloadLayout.astro
 title: Windows Download
 platform: windows
 description: Download Prism Launcher for Windows

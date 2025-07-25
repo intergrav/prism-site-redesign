@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DownloadMarkdownLayout.astro
+layout: ../../layouts/DownloadLayout.astro
 title: Linux Download
 platform: linux
 description: Download Prism Launcher for Linux

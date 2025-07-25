@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DownloadMarkdownLayout.astro
+layout: ../../layouts/DownloadLayout.astro
 title: macOS Download
 platform: macos
 description: Download Prism Launcher for macOS

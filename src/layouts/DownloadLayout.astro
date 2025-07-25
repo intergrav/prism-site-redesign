@@ -1,10 +1,10 @@
 ---
 import MainLayout from "./MainLayout.astro";
-import PlatformSwitcher from "../components/PlatformSwitcher.astro";
 import Card from "../components/ui/Card.astro";
 import ProseCard from "../components/ui/ProseCard.astro";
 import DownloadCard from "../components/ui/DownloadCard.astro";
-import { DOWNLOADS } from "../data/downloads";
+import { Icon } from "astro-icon/components";
+import { DOWNLOADS, PLATFORMS } from "../data/downloads";
 
 export interface Props {
 	frontmatter: {
@@ -31,7 +31,27 @@ const {
 
 <MainLayout title={title} description={description}>
 	<Card>
-		<PlatformSwitcher currentPlatform={platform} />
+		<div
+			class="not-prose flex flex-wrap rounded-lg p-1 mb-6 bg-prism-accent-light dark:bg-prism-accent-dark"
+		>
+			{
+				PLATFORMS.map((platformItem) => (
+					<a
+						href={platformItem.path}
+						class:list={[
+							"flex flex-col items-center justify-center gap-1",
+							"flex-grow basis-0 px-2 py-2 text-center text-sm font-medium rounded-md",
+							"text-prism-text-light dark:text-prism-text-dark",
+							platform === platformItem.key &&
+								"bg-prism-background-light dark:bg-prism-background-dark border border-black/10 dark:border-white/10",
+						]}
+					>
+						<Icon size="24" name={platformItem.icon} />
+						{platformItem.name}
+					</a>
+				))
+			}
+		</div>
 		<h1 class="heading-1 mb-6">{title}</h1>
 
 		<div class="flex flex-col gap-6">
